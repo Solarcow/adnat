@@ -1,0 +1,17 @@
+<%= form_for(@shift) do |f| %>
+
+
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id%>
+
+    <%= f.label :start, "Start Time" %>
+    <%= f.number_field :start%>
+
+    <%= f.label :finish, "Finish Time" %>
+    <%= f.number_field :finish%>
+
+    <%= f.label :break_length, "Break Length" %>
+    <%= f.number_field :break_length%>
+
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>

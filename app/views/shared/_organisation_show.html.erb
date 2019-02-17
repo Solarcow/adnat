@@ -1,0 +1,7 @@
+ <% @organisation.each do |organisation| %>
+      <tr>
+        <td><%= organisation.name %></td>
+        <td><%= link_to 'Edit', '#' %></td>
+
+      </tr>
+    <% end %>

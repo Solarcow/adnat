@@ -1,8 +1,19 @@
 <% provide(:title, @user.name) %>
 <div class="cointer">
-  <aside class="col-md-4">
+  <aside class="col-md-6">
     <section class="user_info">
         <p> Logged in as user <%= @user.name %>   <%= link_to "Log out", logout_path, method: :delete %></p>
+        <br>
+        <%= link_to "Shifts", new_shift_url %>
+
+        <div class="col-md-12">
+        	<%= render Organisation.all %>
+
+
+	  </div>
+	  <br>
+
+	 	<%= render 'shared/organisation_form' %>
 
     </section>
   </aside>
